@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  Hello World
+//  Command Line Template
 //
 //  Created by tony philip on 4/4/15.
 //  Copyright (c) 2015 tony philip. All rights reserved.
