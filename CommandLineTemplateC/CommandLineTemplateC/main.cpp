@@ -7,17 +7,61 @@
 //
 
 #include <iostream>// works with inputs and outputs
+#include <cmath>
+#include <fstream>
+#include <streambuf>
+#include <cstdlib>
+#include "../main.h"
+
 
 using namespace std;  // Load standard library so that you can use the cout = console out function
 
 int main(int argc,char* argv[])
 {
+    char filename[50];
+    ifstream filestreamer;
+    
     if (argc==1) // Check for passed in argument.  If none is provide print usage message
-        cout << "Usage; ./program_name arg1" << endl;
+    {
+        //cout << "Usage; ./program_name arg1" << endl;
+        cout << "Read File: ";
+        //cin.getline(filename, 50);
+        scanf("%s", filename);
+        filestreamer.open(filename);
+        
+        if(!filestreamer.is_open()) // if the file is already open we kill the execution
+        {
+            cout << printf("File '%s' is currently Open or does not exist", filename);
+            exit(EXIT_FAILURE);
+        }
+    }
     else
     {
         for(int i=1;i < argc; i++) // For each argument passed at the command line do
-            cout << argv[i] << endl;
+        {
+            
+            
+            if (i == 1)
+            {
+                strcpy(filename, argv[i]);
+                filestreamer.open(filename);
+                if(!filestreamer.is_open()) // if the file is already open we kill the execution
+                {
+                    cout << printf("File '%s' is currently Open or does not exist", filename);
+                    exit(EXIT_FAILURE);
+                }
+            }
+        }
     }
+    
+    char word[50];
+    filestreamer >> word;
+    while(filestreamer.good())
+    {
+        cout << word << " ";
+        filestreamer >> word;
+    }
+    
     return 0;  // End the application
 }
+

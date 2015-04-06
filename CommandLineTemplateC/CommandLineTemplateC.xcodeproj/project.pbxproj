@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A73D8A2C1AD1B69C00BCFB7A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A73D8A2B1AD1B69C00BCFB7A /* main.cpp */; };
+		A73D8A331AD22FAF00BCFB7A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A73D8A2B1AD1B69C00BCFB7A /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		A73D8A281AD1B69C00BCFB7A /* CommandLineTemplateC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CommandLineTemplateC; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73D8A2B1AD1B69C00BCFB7A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A73D8A321AD2204200BCFB7A /* RackColors.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = RackColors.strings; sourceTree = "<group>"; };
+		A73D8A341AD246AE00BCFB7A /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		A73D8A1F1AD1B69C00BCFB7A = {
 			isa = PBXGroup;
 			children = (
+				A73D8A341AD246AE00BCFB7A /* main.h */,
 				A73D8A2A1AD1B69C00BCFB7A /* CommandLineTemplateC */,
 				A73D8A291AD1B69C00BCFB7A /* Products */,
 			);
@@ -58,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				A73D8A2B1AD1B69C00BCFB7A /* main.cpp */,
+				A73D8A321AD2204200BCFB7A /* RackColors.strings */,
 			);
 			path = CommandLineTemplateC;
 			sourceTree = "<group>";
@@ -118,7 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A73D8A2C1AD1B69C00BCFB7A /* main.cpp in Sources */,
+				A73D8A331AD22FAF00BCFB7A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +236,7 @@
 				A73D8A311AD1B69C00BCFB7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
